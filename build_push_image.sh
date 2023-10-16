@@ -9,7 +9,7 @@ docker images
 docker tag item-app:v1 yahyaabdurr/item-app:v1
 
 # Step 4: Login ke Docker Hub
-docker login -u yahyaabdurr -p password
+echo "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" | docker login docker.pkg.github.com -u yahyaabdurr --password-stdin
 
 # Step 5: Mengunggah image ke Docker Hub
-docker push yahyaabdurr/item-app:v1
+docker push docker.pkg.github.com/yahyaabdurr/item-app/item-app:v1
